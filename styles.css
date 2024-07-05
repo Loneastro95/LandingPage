@@ -73,13 +73,22 @@ a{
     border: 2px solid #3882F6;
 }
 .content-img{
-    background-color: #E5E7EB;
+   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 14px;
     color: #6b6b6b;
     width: 50%;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    width: 60%;
+    min-height: 20vh;
+
 }
 
 /* information section */
@@ -145,7 +154,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 80px;
     
 }
 .footer-container{
@@ -178,3 +187,27 @@ a{
     padding: 5px 30px;
     
   }
+
+  /* screen fix with media query */
+
+  @media (min-width: 1920px) and (max-width: 2560px)  {
+    
+.header-container{
+    padding: 40px 20%;
+    gap: 80px;
+    /* min-height: 100vh; */
+}
+.content-paragraph{
+    width: 65%;
+    
+}
+.quote-container{
+    padding: 40px 30%;
+}
+
+.footer{
+    
+    padding: 100px;
+    
+}
+}
